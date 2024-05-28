@@ -1,0 +1,18 @@
+<FaceColorDetectorApp>:
+    BoxLayout:
+        orientation: 'vertical'
+
+        Image:
+            id: image_widget
+            size_hint: 1, 0.8
+
+        BoxLayout:
+            size_hint: 1, 0.2
+
+            Button:
+                text: "Capture Face"
+                on_press: root.capture_face(self)
+
+            Button:
+                text: "Quit"
+                on_press: root.quit_app(self)
